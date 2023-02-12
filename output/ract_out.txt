@@ -1,5 +1,1 @@
-* * * * 
-* * * * 
-* * * * 
-* * * * 
-* * * * 
+Not a Pythagorean triplet
