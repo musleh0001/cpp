@@ -9,6 +9,22 @@ int linearSearch(int arr[], int n, int key) {
     return -1;
 }
 
+int binarySearch(int arr[], int n, int key) {
+    int left = 0, right = n;
+    while (left <= right) {
+        int mid = (left + right) / 2;
+
+        if (arr[mid] == key) 
+            return mid;
+        else if (arr[mid] > key)
+            right = mid - 1;
+        else 
+            left = mid + 1;
+    }
+
+    return -1;
+}
+
 int main () {
     int n;
     cin >> n;
@@ -20,7 +36,7 @@ int main () {
     int key;
     cin >> key;
 
-    cout << linearSearch(arr, n, key) << endl;
+    cout << binarySearch(arr, n, key) << endl;
 
     return 0;
 }
