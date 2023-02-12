@@ -48,3 +48,28 @@
         freopen("output.txt", "w", stdout);    
 #endif
 ```
+
+#### Combinations
+
+$$
+nCr = n! / (n - r)! * r!
+$$
+
+#### Factorial
+
+$$
+n * (n - 1) * (n - 2) * (n - 3) * ... * (n - 1) * 1
+$$
+
+#### Pascal Triangle
+
+$$
+T(i,j) = iCj
+= i! / (i - j)! * j!
+$$
+
+#### Sum of first n natural numbers
+
+$$
+S = n(n + 1) / 2
+$$
