@@ -1,0 +1,12 @@
+{
+	"files.associations": {
+		"iostream": "cpp"
+	},
+	"[cpp]": {
+		"editor.formatOnSave": false
+	},
+	"code-runner.executorMap": {
+		"c": "cd $dir && clang $fileName -o compiled/$fileNameWithoutExt && $dir/compiled/$fileNameWithoutExt",
+		"cpp": "cd $dir && clang++ $fileName -o compiled/$fileNameWithoutExt && $dir/compiled/$fileNameWithoutExt"
+	}
+}
