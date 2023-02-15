@@ -1,15 +1,17 @@
 #include<iostream>
 using namespace std;
 
-void increment(int a) {
-    a++;
+void swap(int *a, int *b) {
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
 }
 
 int main () {
     int arr[] = {10, 20, 30};
     int *ptr = arr;
     
-    int a=2;
+    int a=2, b=4;
 
 
     for (int i=0; i<3; i++) {
@@ -17,6 +19,10 @@ int main () {
         cout << *(arr + i) << endl;
         ptr++;
     }
+
+    cout << a << " "  << b << endl;
+    swap(&a, &b);
+    cout << a << " " << b << endl;
 
     return 0;
 }
