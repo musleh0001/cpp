@@ -157,3 +157,12 @@ int main () {
     return 0;
 }
 ```
+
+#### Convert string upper to lower
+
+```c
+str = 'a';
+
+str -= 32; // upper
+str += 32; // lower
+```
